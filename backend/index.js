@@ -6,7 +6,7 @@ const { authMiddleware } = require("./middleware/authMiddleware");
 const { taskRoute } = require("./routes/taskRoute");
 require("dotenv").config();
 
-const PORT=process.env.Port || 8000;
+const PORT=process.env.Port;
 const app=express();
 app.use(express.json());
 app.use(cors());
